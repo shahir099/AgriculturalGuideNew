@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.constraint.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#ffffff"
+    tools:context=".AboutActivity"
+    >
+
+<android.support.constraint.Guideline
+    android:id="@+id/guideline"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_percent="0.56882256" />
+
+<TextView
+    android:id="@+id/intro_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="8dp"
+    android:text="Smart Agri Guide"
+    android:textColor="@color/intro_title_color"
+    android:textSize="32dp"
+    android:textStyle="bold"
+
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="20dp"
+        android:text="Why AgriGuide"
+
+        android:textColor="@color/intro_title_color"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/intro_title"
+        app:layout_constraintVertical_bias="1.0"
+
+        />
+
+    <TextView
+        android:id="@+id/intro_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:lineSpacingExtra="16dp"
+        android:text="\n
+•	Assisting farmers in maintaining their field as per the weather.\n
+•	Give early warnings for flood to minimize the damage due to flood.\n
+•	Controlling the water irrigation in field, which will be controlled
+ automatically by system to reduce the effort of farmers.\n
+•	Controlling the dam gate for distributing water to  the fields.\n
+
+Users:\n
+•	Mainly farmers are the target users of our system.\n
+•	Besides farmers people can use the system to know the weather and get the early flood warnings to get prepared for the upcoming natural events
+Real-Life Implementation.\n
+•	Dam Gate will be controlled by a motor using the data provided by the water level sensor.\n
+•	Weather module including rain gauge, wind speed sensor, wind direction sensor etc. will be installed in different locations of the field.\n
+•	Node MCU will be connected with each module to send data to the central hub.\n
+•	Central Hub (Arduino Uno) will be installed in the secure location of the field.\n
+•	Central Hub will send the data to the database.\n
+•	Automatic Gate will be installed in the irrigation channel of the field which will be controlled by a motor.\n
+•	Central Hub will send decision based on the data provided by the sensors and control the gate as per requirement.\n
+•	User will control the whole system using a android application.\n
+"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/intro_title"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>
